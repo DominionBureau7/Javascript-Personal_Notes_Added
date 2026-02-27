@@ -10,6 +10,8 @@
     <button id = "Green">Green</button>
 </body>
 <script>
+    // In lexical scoping - we can see that the inner function can access the variable of the outer function but the outer function cannot access the variable of the inner function. = LEXICAL SCOPING
+    // In closure - we can see that the inner function can access the variable of the outer function even after the outer function has finished executing. = CLOSURE
     // _____________________________________________________________________Lexical scoping_______________________________________________________________
     // function init() {
     //     let name = "Mozilla";
@@ -24,10 +26,10 @@
         console.log("Outer", secret);
         
         function inner(){
-            let secret = "my123"// Brother 1
+            let secret = "my123"// Brother 1. Secret is just a variable.
             console.log("Inner", username);//. Brother 2
         }
-        function innerTwo(){
+        function innerTwo(){// Inner2 will also have the access to username because of lexical scoping but it will not have access to secret because secret is declared in inner() and innerTwo() is a sibling of inner() and siblings do not share variables.
             console.log("innerTwo");
             console.log(secret);// Error = Outer function can be accessed through the inner function but no  inner functions at the same level or scope will share anything.
             
@@ -35,7 +37,7 @@
         inner()// function called.
         innerTwo()// function called
     }
-    outer()// outer function called.
+    outer()// outer function called. But outer() cannot access secret because secret is declared in inner() and outer() is the parent of inner() and parents cannot access the variables of their children.
     console.log("Too much outer", username);// Any variable declared in the function is not accessible from outside.
     //___________________________________________________explaination__________________________________________________________//
     // outer() is the father of the house. He owns username = "hitesh". This makes username the family surname—everyone inside the house can use it, but no one outside can. Now inside outer(), there are two sons: inner() and innerTwo()—they are brothers, living on the same floor. inner() creates its own child called secret = "my123". That secret is inner’s personal locker—only inner() can open it. When inner() logs username, it works because children can always use their father’s property (lexical scoping). 
@@ -46,8 +48,7 @@
 
 
 </script>
-//_____________________________________________________________________Closure____________________________________________________________________________
-
+//___________________________________________________________Closure__________________________________________________________//
     // function makeFunc() {
     //     const name = "Mozilla";
     //     function displayName() {
@@ -66,6 +67,8 @@
         // document.getElementById("Green").onclick = function(){
         //     document.body.style.backgroundColor =`green`
         // }
+        // This was easy, but what if we have 100 buttons and we want to change the background color of the body according to the button clicked. We can do this by using closure.----------------------
+
         function clickHandler(color){
             //document.body.style.backgroundColor = `${color}`// == This wont work.
             return function(){
@@ -74,6 +77,7 @@
         }
         document.getElementById('Orange').onclick = clickHandler("orange")
         document.getElementById('Green').onclick = clickHandler("green")
+        // Here - Closure = A closure is when a function remembers a variable even after the function that created it has finished. A closure is like a function keeping a note in its pocket so it doesn’t forget something later.
     </script>
 
 </html>

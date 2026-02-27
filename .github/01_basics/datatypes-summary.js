@@ -1,4 +1,4 @@
-// node .github/01_basics/datatypes-summary.js
+//                                node .github/01_basics/datatypes-summary.js
 ////////////////////////////Primitive//////////////////////////////////////
 // 7 types : String, Number, Boolean, Null, Undefined, Symbol, Bigint(scientific values)
 

@@ -12,19 +12,19 @@
 //     console.log(num);
 // }
 
-const greetings = "Hello world!"
-for (const greet of greetings) {
-    console.log(`Each char is ${greet}`);
+// const greetings = "Hello world!"
+// for (const greet of greetings) {
+//     console.log(`Each char is ${greet}`);
     
-}
+// }
 //_______________________________________________maps_____________________________________________________
 
-// const map = new Map()
-// map.set('IN', "India")
-// map.set('USA', "United states of America")
-// map.set('Fr', "France")
-// map.set('IN', "India")// This won't be repeated now.
-// console.log(map);// Maps are known to be unique and are always in the order set by the user.
+const map = new Map()
+map.set('IN', "India")
+map.set('USA', "United states of America")
+map.set('Fr', "France")
+map.set('IN', "India")// This won't be repeated now.
+console.log(map);// Maps are known to be unique and are always in the order set by the user.
 
 
 // const map = new Map()

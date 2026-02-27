@@ -25,17 +25,13 @@ Array.prototype.heyHitesh = function(){
     console.log(`Hitesh says hello`);
     
 }
-
-
-
-
 //heroPower.hitesh() // `hitesh is present in all objects
 myHeroes.hitesh()// `hitesh is present in all objects
 myHeroes.heyHitesh()// Hitesh says hello. So yes an array can get the power even before going through the object.
 //heroPower.heyHitesh() // error
 
 // ____________________________Inheritence______________________
-// Below is whats called Prototypal Inheritence
+// Below is whats called Prototypal Inheritence. Accessing someone's property through another object. 
 
 // Old syntax
 const user ={
@@ -57,7 +53,7 @@ Teacher.__proto__= user
 
 // Modern syntax
 
-Object.setPrototypeOf(TeachingSupport, Teacher)
+Object.setPrototypeOf(TeachingSupport, Teacher)// TeacjingSupport can now access the properties of Teacher and user as well.
 //_________________________________________________________________________________//
 let anotherUsername = "ChaiAurCode       "
 String.prototype.truelength = function(){

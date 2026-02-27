@@ -1,4 +1,4 @@
-//    node .github/10_classes_and_oop/staticProp.js
+//    node .github/10_classes_and_oop/staticProp7.js
 
 class User {
     constructor(username){
@@ -6,8 +6,9 @@ class User {
     }
     logMe(){
         console.log(`Username : ${this.username}`);
-    }// Now we want that if a user is created, a unique ID is attached to it simultaneously
-    /*static*/ createID(){// Use static when the behavior belongs to the class itself, not to individual objects.
+    }// Now we want that if a user is created, a unique ID is attached to it simultaneously.
+    
+    /*static*/createID(){// Use static when the behavior belongs to the class itself, not to individual objects.
         return `123`
      }
 }

@@ -23,7 +23,7 @@ console.log(regularUser.fullname.userFullname);
 // const obj2 = {3: "a", 4: "b"};//keys are numbers
 // const obj3 = {obj1, obj2};// Same problem as arrays, objects within objects
 // console.log(obj3);
-// const obj3 = Object.assign(obj1, obj2);//Merges two objects
+// const obj3 = Object.assign(obj1, obj2);// Merges two objects
 // console.log(obj3);________________________________below is the correct way.
 // const obj3 = Object.assign({}, obj1, obj2);// {} = A good practice to keep the original objects safe
 // console.log(obj3);// Also guarentees the result expected.

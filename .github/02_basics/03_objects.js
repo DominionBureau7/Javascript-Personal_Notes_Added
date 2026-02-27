@@ -27,7 +27,7 @@ console.log(Jsuser[mySym]);// not as "mySym" because mySym is a symbol here and 
 Jsuser.age = 19;
 Jsuser.email = "hitesh@chatgpt.com";
 //Object.freeze(Jsuser)//Freeze to avoid changes in object by anyone.
-Jsuser.email = "hitesh@microsoft.com";// this will not work now
+Jsuser.email = "hitesh@microsoft.com";// this will not work now if we freeze the object because it will not allow any changes in the object.
 console.log(Jsuser);
 
 ///adding greetings----------

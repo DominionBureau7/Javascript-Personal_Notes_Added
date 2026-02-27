@@ -1,4 +1,4 @@
-//     node .github/10_classes_and_oop/getter_setter.js
+//     node .github/10_classes_and_oop/getter_setter10.js
 
 // class User {
 //     constructor(email, password){

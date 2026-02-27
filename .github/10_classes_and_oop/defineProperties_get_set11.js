@@ -1,4 +1,4 @@
-//     node .github/10_classes_and_oop/properties_get_set.js
+//     node .github/10_classes_and_oop/defineProperties_get_set11.js
 
 // This is the older syntax of get er and setter. Newer ones have clearer syntax.
 
@@ -25,6 +25,7 @@ function User(email, password){
     })
 }
 const chai = new User("chai@chai.com","chai")
-console.log(chai.email);
-console.log(chai.password);
+console.log(chai.email); // CHAI@CHAI.COM
+console.log(chai.password);// CHAI
 
+// 90% of the time, we use this newer syntax of getter and setter. This is the older syntax.

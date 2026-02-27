@@ -1,4 +1,6 @@
 //                                        node .github/04_control_flow/truthy.js
+
+
 const userEmail = "h@hitesh.ai";
 if (userEmail) {
     console.log("Got user email")

@@ -1,5 +1,5 @@
 // All of this javascript is post ES6.
-//    node .github/10_classes_and_oop/myClasses.js
+//    node .github/10_classes_and_oop/myClasses5.js
 
 
 // class User{
@@ -7,7 +7,7 @@
 //         this.username = username;
 //         this.email = email;
 //         this.password = password;
-//     }
+//     }// this is the blueprint for creating a user. 
 //     encryptPassword(){
 //         return `${this.password}abc`
 //     }// Another function for encrypting passwords.

@@ -1,4 +1,4 @@
-//     node .github/10_classes_and_oop/inheritence.js
+//     node .github/10_classes_and_oop/inheritence6.js
 
 class User {
     constructor(username){

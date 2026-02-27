@@ -1,4 +1,4 @@
-//      node .github/10_classes_and_oop/mathpi.js
+//      node .github/10_classes_and_oop/mathpi9.js
 //__________________________________________________explainantion_____________________________________________________________//
 // Object.getOwnPropertyDescriptor//It tells you HOW a property exists on an object, not just WHAT its value is.
 // {
@@ -29,7 +29,7 @@ const chai = {
     }
 }
 
-// Object.defineProperties(chai, {"name": {
+// Object.defineProperties(chai, {"name": { // define when properties are writable, enumerable, configurable.
 //     writable : false,
 //     enumerable : false,
 // }})

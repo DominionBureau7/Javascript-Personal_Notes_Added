@@ -20,7 +20,7 @@
 //______________________Constructor______________
 
 // const promiseOne = new Promise()
-// const date = new Date()// new = constructor function
+// const date = new Date()// new = constructor function helps in making multiple objects with the same properties and methods. It is a blueprint for creating objects. 
 
 
 function User(username, loginCount, isLoggedIn){
@@ -33,7 +33,7 @@ function User(username, loginCount, isLoggedIn){
         
     }
 
-    return this// This is by default no need to write i.
+    return this// This is by default no need to write it.
 }
 
 // const userOne = User("hitesh", 12, true);

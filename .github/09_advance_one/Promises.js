@@ -5,7 +5,7 @@ const promiseOne = new Promise(function(resolve, reject){
     // DB calls, cryptography, network
     setTimeout(function(){
         console.log('Async task is completed')
-        resolve()
+        resolve()// without this, the promise will be pending and will never be resolved.
     }, 1000)
 })// Here a promise is created and now we can focus on its consumption
 promiseOne.then(function(){// .then is for resolve 
@@ -75,7 +75,7 @@ async function consumePromiseFive(){
     } catch (error) {
         console.log(error);
         
-    }// trycatch 
+    }// trycatch is needed because if the promise is rejected, it will throw an error and we need to handle it.
 }
 consumePromiseFive()
 
@@ -86,7 +86,7 @@ consumePromiseFive()
 // async function getAllUsers(){
 //     try {
 //         const response = await fetch('https://jsonplaceholder.typicode.com/users')
-//         const data = await response.json()// await needed here because  
+//         const data = await response.json()// await needed here because converting string to a json takes time. If not await is used, then it will return a promise and not the actual data, even if the code is correct.
 //         console.log(data); 
 //     } catch (error) {
 //         console.log("E: ", error);

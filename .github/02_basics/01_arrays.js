@@ -1,4 +1,5 @@
-                 //node .github/02_basics/01_arrays.js
+//                                    node .github/02_basics/01_arrays.js
+
 /////////////////////////////////Arrays/////////////////////////////////////
 
 const myArr = [0, 1, 2, 3, 4, 5, 'True', "Hitesh"]// arrays are inside square brackets and inside it are called elements. The elements can be of different nature.
